@@ -44,7 +44,7 @@ export default function ProgramsPage() {
   const router = useRouter()
   const [activeCategory, setActiveCategory] = useState("all")
   const [programs, setPrograms] = useState<Program[]>([])
-  const [sortBy, setSortBy] = useState("popular")
+  const [sortBy, setSortBy] = useState("newest")
 
   const sortOptions = [
     { value: "popular", label: "인기순" },
@@ -70,21 +70,21 @@ export default function ProgramsPage() {
     const programsData: Program[] = [
       {
         id: "ai-vision-yolo",
-        title: "AI Computer Vision with YOLOv8",
-        description: "실전 AI 프로젝트로 배우는 컴퓨터 비전의 세계",
-        duration: "4주 과정",
-        level: "초급-중급",
-        price: "149,000원",
-        originalPrice: "199,000원",
+        title: "한국 산업재해 주요 원인 '안전모 미착용' AI 비전 기술 YOLO로 근절하기",
+        description: "산업현장 안전을 지키는 AI 비전 기술 실전 프로젝트",
+        duration: "12주 과정",
+        level: "중급",
+        price: "249,000원",
+        originalPrice: "299,000원",
         rating: 0,
         studentCount: 0,
         badge: "실전 프로젝트",
         badgeColor: "bg-blue-600",
-        thumbnail: "/placeholder.svg?height=200&width=400",
+        thumbnail: "/images/ai-vision-yolo-thumbnail.png",
         category: "tech",
         university: "KAIST",
         instructor: "김AI 박사",
-        skills: ["컴퓨터 비전", "YOLOv8", "딥러닝", "실전 프로젝트"]
+        skills: ["컴퓨터 비전", "YOLOv8", "산업안전", "실시간 감지", "웹 개발"]
       },
       {
         id: "ai-ethics",
@@ -102,7 +102,7 @@ export default function ProgramsPage() {
         category: "tech",
         university: "KAIST",
         instructor: "김AI 교수",
-        skills: ["AI 윤리", "딜레마 분석", "해결방안 도출", "융합적 사고"],
+        skills: ["AI 윤리", "딜레마 분석", "해결방안 도출", "융합적 사고"]
       },
       {
         id: "bio-gene",
@@ -313,6 +313,10 @@ export default function ProgramsPage() {
       return matchesCategory
     })
     .sort((a, b) => {
+      // AI Computer Vision course should always be first
+      if (a.id === "ai-vision-yolo") return -1
+      if (b.id === "ai-vision-yolo") return 1
+
       switch (sortBy) {
         case "rating":
           return b.rating - a.rating
@@ -321,7 +325,7 @@ export default function ProgramsPage() {
         case "price-high":
           return Number.parseInt(b.price.replace(/[^0-9]/g, "")) - Number.parseInt(a.price.replace(/[^0-9]/g, ""))
         case "newest":
-          return b.studentCount - a.studentCount // 임시로 수강생 수로 정렬
+          return b.studentCount - a.studentCount
         case "popular":
         default:
           return b.studentCount - a.studentCount

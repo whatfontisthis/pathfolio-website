@@ -464,12 +464,12 @@ export default function PremiumCoursesPage() {
     },
     {
       id: "ai-vision-yolo",
-      title: "AI Computer Vision with YOLOv8",
-      description: "실전 AI 프로젝트로 배우는 컴퓨터 비전의 세계",
-      duration: "4주 과정",
-      level: "초급-중급",
-      price: "149,000원",
-      originalPrice: "199,000원",
+      title: "한국 산업재해 주요 원인 '안전모 미착용' AI 비전 기술 YOLO로 근절하기",
+      description: "산업현장 안전을 지키는 AI 비전 기술 실전 프로젝트",
+      duration: "12주 과정",
+      level: "중급",
+      price: "249,000원",
+      originalPrice: "299,000원",
       rating: 0,
       studentCount: 0,
       badge: "실전 프로젝트",
@@ -477,12 +477,12 @@ export default function PremiumCoursesPage() {
       category: "ai",
       features: [
         "이론과 실습의 균형잡힌 커리큘럼",
-        "2주 1회 멘토링 세션",
+        "주 1회 전문가 멘토링 세션",
         "실전 프로젝트 완성",
         "GitHub 포트폴리오 구축",
-        "커뮤니티 참여"
+        "AI 커뮤니티 참여"
       ],
-      thumbnail: "/placeholder.svg?height=200&width=300",
+      thumbnail: "/images/ai-vision-yolo-thumbnail.png",
       instructor: "김AI 박사",
       difficulty: "intermediate"
     },

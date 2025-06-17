@@ -876,18 +876,18 @@ export default function ProgramDetailsPage() {
       },
       "ai-vision-yolo": {
         id: "ai-vision-yolo",
-        title: "AI Computer Vision with YOLOv8",
-        description: "실전 AI 프로젝트로 배우는 컴퓨터 비전의 세계",
-        fullDescription: "컴퓨터 비전의 기본 원리부터 YOLOv8을 활용한 실전 프로젝트까지, 체계적으로 배우는 AI 비전 과정입니다. 이론과 실습의 균형잡힌 커리큘럼으로, 실제 문제를 해결하는 AI 시스템을 직접 개발해볼 수 있습니다.",
-        duration: "4주 과정",
-        level: "초급-중급",
-        price: "149,000원",
-        originalPrice: "199,000원",
+        title: "한국 산업재해 주요 원인 '안전모 미착용' AI 비전 기술 YOLO로 근절하기",
+        description: "산업현장 안전을 지키는 AI 비전 기술 실전 프로젝트",
+        fullDescription: "한국 산업현장의 주요 재해 원인인 안전모 미착용 문제를 AI 비전 기술로 해결하는 실전 프로젝트입니다. YOLOv8을 활용하여 실시간 안전모 착용 감지 시스템을 개발하고, 이를 통해 산업안전에 기여하는 의미있는 프로젝트를 완성합니다. 이론과 실습의 균형잡힌 커리큘럼으로, 실제 산업현장에 적용 가능한 AI 시스템을 직접 개발해볼 수 있습니다.",
+        duration: "12주 과정",
+        level: "고급",
+        price: "249,000원",
+        originalPrice: "299,000원",
         rating: 0,
         studentCount: 0,
         badge: "실전 프로젝트",
         badgeColor: "bg-blue-600",
-        thumbnail: "/placeholder.svg?height=200&width=400",
+        thumbnail: "/images/ai-vision-yolo-detail.png",
         instructor: {
           name: "김AI 박사",
           title: "KAIST AI 연구소 연구원",
@@ -895,8 +895,8 @@ export default function ProgramDetailsPage() {
           education: ["KAIST 컴퓨터공학 박사", "서울대학교 전산학 석사"],
           achievements: [
             "국제 컴퓨터 비전 학회 논문 30편 이상 발표",
-            "YOLOv8 기반 프로젝트 다수 개발",
-            "AI 스타트업 기술 자문",
+            "산업안전 AI 프로젝트 다수 개발",
+            "건설업체 AI 안전시스템 자문",
             "AI 교육 프로그램 개발 경험"
           ],
           avatar: "/placeholder.svg?height=100&width=100"
@@ -904,18 +904,18 @@ export default function ProgramDetailsPage() {
         curriculum: [
           {
             week: 1,
-            title: "컴퓨터 비전 기초와 딥러닝",
-            description: "컴퓨터 비전의 기본 개념과 딥러닝 기초를 학습합니다.",
+            title: "산업안전과 AI 비전 기술의 만남",
+            description: "산업안전의 현황과 AI 비전 기술의 역할을 이해합니다.",
             lessons: [
-              { title: "컴퓨터 비전 개요", duration: "45분", type: "video" },
-              { title: "딥러닝 기초", duration: "60분", type: "video" },
-              { title: "이미지 처리 기초", duration: "90분", type: "assignment" },
+              { title: "한국 산업재해 현황 분석", duration: "45분", type: "video" },
+              { title: "AI 비전 기술의 산업안전 적용 사례", duration: "60분", type: "video" },
+              { title: "안전모 감지 시스템 기획", duration: "90분", type: "assignment" },
               { title: "기초 개념 퀴즈", duration: "15분", type: "quiz" }
             ]
           },
           {
             week: 2,
-            title: "YOLOv8 이해와 실습",
+            title: "YOLOv8 기초와 실습",
             description: "YOLOv8의 구조와 원리를 이해하고 기본적인 실습을 진행합니다.",
             lessons: [
               { title: "YOLOv8 아키텍처", duration: "50분", type: "video" },
@@ -926,80 +926,114 @@ export default function ProgramDetailsPage() {
           },
           {
             week: 3,
-            title: "프로젝트 기획 및 구현",
-            description: "실제 문제를 해결하는 프로젝트를 기획하고 구현합니다.",
+            title: "안전모 데이터셋 구축",
+            description: "안전모 감지를 위한 데이터셋을 수집하고 전처리합니다.",
             lessons: [
-              { title: "프로젝트 주제 선정", duration: "60분", type: "video" },
-              { title: "데이터 수집 및 전처리", duration: "90분", type: "assignment" },
-              { title: "모델 학습 및 최적화", duration: "120분", type: "project" },
+              { title: "데이터 수집 전략", duration: "60분", type: "video" },
+              { title: "데이터 전처리 및 라벨링", duration: "90분", type: "assignment" },
+              { title: "데이터 증강 기법", duration: "120분", type: "project" },
               { title: "멘토링 세션", duration: "45분", type: "assignment" }
             ]
           },
           {
             week: 4,
-            title: "프로젝트 완성 및 발표",
-            description: "프로젝트를 완성하고 결과를 발표합니다.",
+            title: "모델 학습 및 최적화",
+            description: "안전모 감지 모델을 학습하고 성능을 최적화합니다.",
             lessons: [
-              { title: "성능 평가 및 개선", duration: "60분", type: "video" },
-              { title: "프로젝트 문서화", duration: "90분", type: "assignment" },
-              { title: "최종 발표 준비", duration: "120분", type: "project" },
-              { title: "프로젝트 발표", duration: "45분", type: "assignment" }
+              { title: "모델 학습 전략", duration: "60분", type: "video" },
+              { title: "하이퍼파라미터 튜닝", duration: "90분", type: "assignment" },
+              { title: "성능 평가 및 개선", duration: "120분", type: "project" },
+              { title: "멘토링 세션", duration: "45분", type: "assignment" }
+            ]
+          },
+          {
+            week: 5,
+            title: "실시간 감지 시스템 개발",
+            description: "실시간 안전모 감지 시스템을 구현합니다.",
+            lessons: [
+              { title: "실시간 처리 기법", duration: "60분", type: "video" },
+              { title: "시스템 아키텍처 설계", duration: "90분", type: "assignment" },
+              { title: "웹 인터페이스 개발", duration: "120분", type: "project" },
+              { title: "멘토링 세션", duration: "45분", type: "assignment" }
+            ]
+          },
+          {
+            week: 6,
+            title: "시스템 통합 및 테스트",
+            description: "개발한 시스템을 통합하고 실제 환경에서 테스트합니다.",
+            lessons: [
+              { title: "시스템 통합", duration: "60분", type: "video" },
+              { title: "테스트 계획 수립", duration: "90분", type: "assignment" },
+              { title: "실제 환경 테스트", duration: "120분", type: "project" },
+              { title: "멘토링 세션", duration: "45분", type: "assignment" }
             ]
           }
         ],
         assignments: [
           {
-            title: "YOLOv8 기반 실생활 문제 해결 프로젝트",
-            description: "YOLOv8을 활용하여 실생활에서 발생하는 문제를 해결하는 AI 시스템을 개발합니다. 예를 들어, 안전 모니터링, 재활용품 분류, 교통량 분석 등의 실제 문제를 해결하는 프로젝트를 진행합니다.",
-            difficulty: "중급",
-            estimatedTime: "4주",
+            title: "실시간 안전모 감지 시스템 개발",
+            description: "YOLOv8을 활용하여 건설현장의 실시간 안전모 착용 여부를 감지하는 AI 시스템을 개발합니다. 웹 인터페이스를 통해 현장 관리자가 쉽게 모니터링할 수 있는 시스템을 구현합니다.",
+            difficulty: "중급-고급",
+            estimatedTime: "12주",
             deliverables: [
               "프로젝트 기획서",
+              "데이터셋 구축 보고서",
               "AI 모델 구현 코드",
+              "웹 인터페이스",
               "성능 평가 보고서",
               "GitHub 저장소",
               "프로젝트 발표 자료"
             ],
-            sespecExample: "YOLOv8을 활용한 AI 비전 프로젝트를 통해 실생활 문제 해결 능력과 AI 기술 구현 역량을 기르고, 이를 바탕으로 의미있는 프로젝트 경험을 쌓았습니다."
+            sespecExample: "산업현장의 안전모 미착용 문제를 AI 비전 기술로 해결하는 프로젝트를 통해 실생활 문제 해결 능력과 AI 기술 구현 역량을 기르고, 이를 바탕으로 의미있는 프로젝트 경험을 쌓았습니다."
           }
         ],
         features: [
           "이론과 실습의 균형잡힌 커리큘럼",
-          "2주 1회 멘토링 세션",
+          "주 1회 전문가 멘토링 세션",
           "실전 프로젝트 완성",
           "GitHub 포트폴리오 구축",
-          "커뮤니티 참여",
+          "AI 커뮤니티 참여",
           "수료증 발급",
           "평생 강의 자료 제공",
-          "AI 업계 네트워킹 기회"
+          "산업안전 AI 업계 네트워킹 기회"
         ],
         requirements: [
-          "Python 기초 지식",
+          "Python 중급 지식",
           "기본적인 프로그래밍 경험",
-          "AI에 대한 기본적 관심",
-          "주당 5-8시간 학습 시간 확보",
-          "프로젝트 참여 의지"
+          "Windows/Mac 컴퓨터",
+          "웹캠 또는 카메라",
+          "산업안전에 대한 관심"
         ],
         outcomes: [
-          "컴퓨터 비전의 기본 원리 이해",
+          "산업안전 문제 해결 능력",
           "YOLOv8 모델 구현 능력",
-          "실제 문제 해결 프로젝트 경험",
-          "AI 시스템 개발 역량",
-          "GitHub 포트폴리오 구축",
-          "AI 관련 진로 설계"
+          "실시간 AI 시스템 개발 경험",
+          "웹 인터페이스 개발 능력",
+          "프로젝트 관리 및 문서화 능력"
+        ],
+        bestReviews: [
+          {
+            id: "bestReview1",
+            userName: "이안전",
+            userSchool: "서울대학교",
+            rating: 5,
+            date: "2024-03-15",
+            content: "산업안전이라는 실제적인 문제를 AI 기술로 해결하는 의미있는 프로젝트였습니다. 특히 실시간 안전모 감지 시스템을 개발하면서 실무에서 바로 적용할 수 있는 기술을 배울 수 있었습니다.",
+            isVerified: true,
+            helpfulCount: 12,
+            tags: ["산업안전", "AI", "YOLOv8", "실시간 감지"]
+          }
         ],
         faq: [
           {
             question: "프로그래밍 경험이 없어도 수강 가능한가요?",
-            answer: "Python 기초 지식이 필요합니다. 프로그래밍 경험이 전혀 없는 경우, Python 기초를 먼저 학습하시는 것을 추천드립니다."
+            answer: "Python 중급 지식이 필요합니다. 프로그래밍 경험이 부족한 경우, Python 기초를 먼저 학습하시는 것을 추천드립니다."
           },
           {
             question: "멘토링 세션은 어떻게 진행되나요?",
-            answer: "2주에 1회, 온라인으로 진행됩니다. 프로젝트 진행 상황을 점검하고 질문에 답변하는 시간을 가집니다."
+            answer: "주 1회, 온라인으로 진행됩니다. 프로젝트 진행 상황을 점검하고 질문에 답변하는 시간을 가집니다."
           }
-        ],
-        reviews: [],
-        bestReviews: []
+        ]
       },
     }
 
